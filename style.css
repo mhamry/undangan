@@ -823,8 +823,6 @@ main {
     overflow-x: hidden;
   }
 
-  .landing-top,
-  .groom-bride,
   .congrat {
     overflow-x: hidden;
   }
@@ -982,7 +980,7 @@ main {
   }
 
   .thankyou .nama_pengantin {
-    font-size: 35px;
+    font-size: 45px;
   }
 
   .thankyou i {
