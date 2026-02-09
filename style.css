@@ -823,11 +823,9 @@ main {
     overflow-x: hidden;
   }
 
-  .save-date,
+  .landing-top,
   .groom-bride,
-  .wedding-event,
-  .landing-bottom,
-  .landing-top {
+  .congrat {
     overflow-x: hidden;
   }
 
@@ -984,11 +982,11 @@ main {
   }
 
   .thankyou .nama_pengantin {
-    font-size: 20px;
+    font-size: 35px;
   }
 
   .thankyou i {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .thankyou .medsos i {
