@@ -823,6 +823,7 @@ main {
     overflow-x: hidden;
     background-color: transparent;
     z-index: -1;
+    max-width: 100%;
   }
 
   .congrat {
