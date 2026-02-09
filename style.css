@@ -821,6 +821,8 @@ main {
 @media (max-width: 578px) {
   body {
     overflow-x: hidden;
+    background-color: transparent;
+    z-index: -1;
   }
 
   .congrat {
@@ -962,6 +964,9 @@ main {
   .galery {
     padding: 30px 6px;
   }
+  .galery img {
+    height: 200px;
+  }
 
   .galery .header .text1 {
     font-size: 30px;
@@ -980,7 +985,7 @@ main {
   }
 
   .thankyou .nama_pengantin {
-    font-size: 45px;
+    font-size: 35px;
   }
 
   .thankyou i {
