@@ -22,11 +22,9 @@ main {
 
 /* ================= LANDING ATAS ================= */
 .landing-top {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% - 500px);
+  position: absolute;
+  left: 200px;
+  right: 200px;
   height: 100vh;
   background:
     linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.4) 55%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0) 100%),
@@ -38,7 +36,6 @@ main {
   text-align: center;
   z-index: 10;
   transition: transform 3s ease-in;
-
   color: white;
   display: flex;
   justify-content: center;
@@ -55,7 +52,7 @@ main {
 }
 
 .landing-top.hide {
-  transform: translateX(-50%) translateY(-100vh);
+  transform: translateY(-100vh);
 }
 
 .landing-top h1 {
@@ -190,6 +187,7 @@ main {
   --bg: url("image/utama/1.png");
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
 }
 
 .groom-bride > * {
@@ -284,6 +282,7 @@ main {
 
 .save-date {
   position: relative;
+  overflow-x: hidden;
 }
 
 .save-date h2 {
@@ -331,6 +330,7 @@ main {
 .wedding-event {
   padding: 80px 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 .wedding-event > * {
@@ -812,23 +812,30 @@ main {
 /* ================= LANDING BAWAH ================= */
 .landing-bottom {
   min-height: 100vh;
+  max-width: calc(100% - 400px);
   background: #fafafa;
+  margin: auto;
+  position: relative;
 }
 
 @media (max-width: 578px) {
   body {
-    position: relative;
     overflow-x: hidden;
   }
-  main {
-    width: 100%;
-    margin: auto;
+
+  .save-date,
+  .groom-bride,
+  .wedding-event,
+  .landing-bottom,
+  .landing-top {
+    overflow-x: hidden;
   }
 
   .landing-top {
     left: 0;
+    right: 0;
     width: 100%;
-    transform: none;
+    height: 100vh;
   }
   .landing-top h2 {
     font-size: 60px;
@@ -850,6 +857,11 @@ main {
     font-size: 10px;
     color: white;
     font-style: italic;
+  }
+
+  .landing-bottom {
+    max-width: 100%;
+    height: 100vh;
   }
 
   .hero h2 {
@@ -990,12 +1002,9 @@ main {
   }
 }
 @media (max-width: 978px) {
-  main {
-    max-width: 100%;
-  }
-
   .landing-top {
     left: 0;
+    right: 0;
     width: 100%;
     transform: none;
   }
